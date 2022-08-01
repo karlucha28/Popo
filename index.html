@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleSheet.css" />
+        <title>Pomodoro</title>
+    </head>
+    <body>
+        <div id="mainbox">
+            <div id="">
+                <span id="startWork">
+                    startWork
+                </span>
+                <span id="shortBreak">
+                    shortBreak
+                </span>
+                <span id="longBreak">
+                    longBreak
+                </span>
+            </div>
+            <div id="work-timer">
+                25:00
+            </div>
+            <div id="">
+                <button type="button" id="start">
+                    start
+                </button>
+                <button type="button" id="pause">
+                    pause
+                </button>
+            </div>
+            <div>
+                <span id="spanPomodoros">
+                    Pomodoros
+                </span>
+                <span id="spanCyclesOfWorkPeriods">
+                    1
+                </span>
+            </div>
+        </div>
+        <div id="taskList">
+            <span id="toDo">
+                To do:
+            </span>
+            <ul id="taskList">
+                <li>DO the projecr</li>
+                <li>DO the projecr</li>
+                <li>DO the projecr</li>
+            </ul>
+            <button type="button" id="addNewTask">
+                + Add a task
+            </button>
+            <form id="formAddTask">
+                <input type="text" placeholder="Text area" name="" id="formAddTaskInputText" />
+                <button type="button"  class="formAddTaskButton">  
+                    Cancel
+                </button>
+                <input type="submit" value="Submit" class="formAddTaskButton" />
+            </form>
+        </div>
+        <div id = "settingsDiv">
+            <form id="settingsForm">
+                <label for="startTimer">Start Timer: </label>
+                <input type="number" name="startTimer" id="startTimerSettings" />
+                <label for="shortBreak">Short Break: </label>
+                <input type="number" name="shortBreak" id="shortBreakSettings" />
+                <label for="longBreak">Long Break </label>
+                <input type="number" name="longBreak" id="longBreakSettings" />
+                <button type="button"  class="settingsButton">  
+                    Cancel
+                </button>
+                <input type="submit" value="Save Settings"  class="settingsButton"/>
+            </form>
+        </div>
+    </body>
+</html>
